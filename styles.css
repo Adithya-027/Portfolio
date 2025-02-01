@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #6200ea, #3700b3);
+  color: white;
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #bb86fc;
+}
+
+/* Section Styles */
+section {
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section h2 {
+  color: #6200ea;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+}
+
+p, ul {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+/* Project Grid */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+  background: #6200ea;
+  color: white;
+  margin: 0 ;
+  padding: 1rem;
+  width: calc(100%+2rem);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #6200ea;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #3700b3;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #bb86fc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+}
